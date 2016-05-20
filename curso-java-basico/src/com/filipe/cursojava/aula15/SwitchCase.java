@@ -20,11 +20,7 @@ public class SwitchCase {
             case 6:System.out.println("Sexta");break;
             case 7:System.out.println("Sabado");break;
             default: System.out.println("Não é valido");
-        }
-        
-        
-    }
-            
-    
+        }     
+    }          
 }
 
