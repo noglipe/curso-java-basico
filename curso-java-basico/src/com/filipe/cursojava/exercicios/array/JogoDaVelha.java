@@ -62,11 +62,11 @@ public class JogoDaVelha {
                     fim = true;
                     vencedor = tabuleiro[0][0];
                 }
-                if (tabuleiro[1][0] == tabuleiro[1][1] && tabuleiro[1][1] == tabuleiro[1][2] && tabuleiro[0][0]!=0) {
+                if (tabuleiro[1][0] == tabuleiro[1][1] && tabuleiro[1][1] == tabuleiro[1][2] && tabuleiro[1][0]!=0) {
                     fim = true;
                     vencedor = tabuleiro[1][0];
                 }
-                if (tabuleiro[2][0] == tabuleiro[2][1] && tabuleiro[2][1] == tabuleiro[2][2] && tabuleiro[0][0]!=0) {
+                if (tabuleiro[2][0] == tabuleiro[2][1] && tabuleiro[2][1] == tabuleiro[2][2] && tabuleiro[2][0]!=0) {
                     fim = true;
                     vencedor = tabuleiro[2][0];
                 }
@@ -76,11 +76,11 @@ public class JogoDaVelha {
                     fim = true;
                     vencedor = tabuleiro[0][0];
                 }
-                if (tabuleiro[0][1] == tabuleiro[1][1] && tabuleiro[1][1] == tabuleiro[2][1] && tabuleiro[0][0]!=0) {
+                if (tabuleiro[0][1] == tabuleiro[1][1] && tabuleiro[1][1] == tabuleiro[2][1] && tabuleiro[0][1]!=0) {
                     fim = true;
                     vencedor = tabuleiro[0][1];
                 }
-                if (tabuleiro[0][2] == tabuleiro[1][2] && tabuleiro[1][2] == tabuleiro[2][2] && tabuleiro[0][0]!=0) {
+                if (tabuleiro[0][2] == tabuleiro[1][2] && tabuleiro[1][2] == tabuleiro[2][2] && tabuleiro[0][2]!=0) {
                     fim = true;
                     vencedor = tabuleiro[0][2];
                 }
@@ -90,11 +90,16 @@ public class JogoDaVelha {
                     fim = true;
                     vencedor = tabuleiro[0][0];
                 }
-                if (tabuleiro[0][2] == tabuleiro[1][1] && tabuleiro[1][1] == tabuleiro[2][0] && tabuleiro[0][0]!=0) {
+                if (tabuleiro[0][2] == tabuleiro[1][1] && tabuleiro[1][1] == tabuleiro[2][0] && tabuleiro[0][2]!=0) {
                     fim = true;
                     vencedor = tabuleiro[0][2];
                 }
 
+            }
+            
+            if(jogadas == 9){
+                System.out.println("Empate");
+                fim= true;
             }
 
             if (fim != true) {
@@ -117,11 +122,11 @@ public class JogoDaVelha {
                         fim = true;
                         vencedor = tabuleiro[0][0];
                     }
-                    if (tabuleiro[1][0] == tabuleiro[1][1] && tabuleiro[1][1] == tabuleiro[1][2] && tabuleiro[0][0]!=0) {
+                    if (tabuleiro[1][0] == tabuleiro[1][1] && tabuleiro[1][1] == tabuleiro[1][2] && tabuleiro[1][0]!=0) {
                         fim = true;
                         vencedor = tabuleiro[1][0];
                     }
-                    if (tabuleiro[2][0] == tabuleiro[2][1] && tabuleiro[2][1] == tabuleiro[2][2] && tabuleiro[0][0]!=0) {
+                    if (tabuleiro[2][0] == tabuleiro[2][1] && tabuleiro[2][1] == tabuleiro[2][2] && tabuleiro[2][0]!=0) {
                         fim = true;
                         vencedor = tabuleiro[2][0];
                     }
@@ -131,11 +136,11 @@ public class JogoDaVelha {
                         fim = true;
                         vencedor = tabuleiro[0][0];
                     }
-                    if (tabuleiro[0][1] == tabuleiro[1][1] && tabuleiro[1][1] == tabuleiro[2][1] && tabuleiro[0][0]!=0) {
+                    if (tabuleiro[0][1] == tabuleiro[1][1] && tabuleiro[1][1] == tabuleiro[2][1] && tabuleiro[0][1]!=0) {
                         fim = true;
                         vencedor = tabuleiro[0][1];
                     }
-                    if (tabuleiro[0][2] == tabuleiro[1][2] && tabuleiro[1][2] == tabuleiro[2][2] && tabuleiro[0][0]!=0) {
+                    if (tabuleiro[0][2] == tabuleiro[1][2] && tabuleiro[1][2] == tabuleiro[2][2] && tabuleiro[0][2]!=0) {
                         fim = true;
                         vencedor = tabuleiro[0][2];
                     }
@@ -145,17 +150,22 @@ public class JogoDaVelha {
                         fim = true;
                         vencedor = tabuleiro[0][0];
                     }
-                    if (tabuleiro[0][2] == tabuleiro[1][1] && tabuleiro[1][1] == tabuleiro[2][0] && tabuleiro[0][0]!=0) {
+                    if (tabuleiro[0][2] == tabuleiro[1][1] && tabuleiro[1][1] == tabuleiro[2][0] && tabuleiro[0][2]!=0) {
                         fim = true;
                         vencedor = tabuleiro[0][2];
                     }
 
                 }
             }
+            
+            if(jogadas == 9){
+                System.out.println("Empate");
+                fim= true;
+            }
 
         } while (fim == false);
         
-        if(vencedor == 1){
+        if(vencedor == 1 && jogadas!=9){
             System.out.println(JogadorUm+" Venceu!");
         }else{
             System.out.println(JogadorDois+" Venceu!");
