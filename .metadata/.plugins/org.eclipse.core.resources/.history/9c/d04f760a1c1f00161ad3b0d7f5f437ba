@@ -1,0 +1,30 @@
+package com.filipe.cursojava.aula29;
+
+public class Carro {
+	
+	String marca;
+	String modelo;
+	int numeroDePassageiros;
+	double capacidadeDeCombustvel;
+	double consumoDeCombustivel;
+	
+	Carro(){
+		System.out.println("Classe Carro foi instanciada");
+		numeroDePassageiros = 4;
+	}
+	
+	Carro(String marca){
+		this.marca = marca;
+	}
+	
+	void exibirAutonomia(){
+		
+		System.out.println("A auntonomia do "+modelo +" é: "+capacidadeDeCombustvel*consumoDeCombustivel +" Km");
+	}
+	
+	double obterAutonomia(){
+		return capacidadeDeCombustvel * consumoDeCombustivel;
+	}
+	
+
+}

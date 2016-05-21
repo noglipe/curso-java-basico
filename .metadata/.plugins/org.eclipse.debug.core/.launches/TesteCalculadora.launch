@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Java-Basico-Eclipse/src/com/filipe/cursojava/aula32/TesteCalculadora.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.filipe.cursojava.aula32.TesteCalculadora"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Java-Basico-Eclipse"/>
+</launchConfiguration>
