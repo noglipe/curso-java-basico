@@ -1,0 +1,9 @@
+package com.filipe.cursojava.aula24;
+
+public class ContatoCelular {
+	
+	String nome;
+	int numero;
+	
+
+}
