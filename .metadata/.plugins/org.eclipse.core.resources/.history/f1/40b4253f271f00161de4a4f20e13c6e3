@@ -1,0 +1,25 @@
+package com.filipe.cursojava.aula35;
+
+public class Calculadora {
+
+	public static int fatrialRecursivo(int num){
+		
+		if(num ==0){
+			return 1;
+		}
+		
+		return num * fatrialRecursivo(num-1);
+	}
+	
+public static int fatrialRecursivoExibindo(int num){
+		
+		if(num ==0){
+			System.out.println(num);
+			return 1;
+		}
+		System.out.println(num);
+		
+		return num * fatrialRecursivo(num-1);
+	}
+}
+
