@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;com.lipe.cursojava.aula38.Teste.java&apos;&#x0D;&#x0A;- Original project: &apos;Java-Basico-Eclipse&apos;&#x0D;&#x0A;- Destination element: &apos;com.lipe.cursojava.aula38.Teste.java&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     com.lipe.cursojava.aula37.Professor.java&#x0D;&#x0A;     com.lipe.cursojava.aula37.Aluno.java&#x0D;&#x0A;     com.lipe.cursojava.aula37.Pessoa.java" description="Copy compilation units" destination="/src&lt;com.lipe.cursojava.aula38{Teste.java" element1="/src&lt;com.lipe.cursojava.aula37{Professor.java" element2="/src&lt;com.lipe.cursojava.aula37{Aluno.java" element3="/src&lt;com.lipe.cursojava.aula37{Pessoa.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1464013992973" units="3" version="1.0"/>
+</session>

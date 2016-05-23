@@ -1,0 +1,21 @@
+package com.lipe.cursojava.aula37;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		Aluno aluno = new Aluno();
+		
+		Pessoa professor = new Professor();
+		
+		aluno.setNome("Filipe Nogueira");
+		professor.setNome("Loiane");
+		professor.setNomeCurso("Java");
+		
+		System.out.println(aluno.getNome());
+		
+		
+
+	}
+
+}

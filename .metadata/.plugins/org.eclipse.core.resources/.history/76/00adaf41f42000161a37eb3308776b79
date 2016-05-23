@@ -1,0 +1,29 @@
+package com.lipe.cursojava.aula38;
+
+public class Aluno extends Pessoa{
+
+	private String cuso;
+	private double notas[];
+	
+	public String getCuso() {
+		return cuso;
+	}
+	public void setCuso(String cuso) {
+		this.cuso = cuso;
+	}
+	public double[] getNotas() {
+		return notas;
+	}
+	public void setNotas(double[] notas) {
+		this.notas = notas;
+	}
+	
+	public double calcularMedia(){
+		return 0;
+	}
+	public boolean cerificarAprovato(){
+		return true;		
+	}
+	
+	
+}
