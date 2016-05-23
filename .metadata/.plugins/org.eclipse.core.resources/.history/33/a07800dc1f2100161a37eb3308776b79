@@ -1,0 +1,20 @@
+package com.filipe.cursojava.aula43.exercicios;
+
+public class ContaPoupanca extends ContaBancaria {
+	
+	private double diaRendimento;
+	
+	public ContaPoupanca(double valor, String nome, int conta, double saldo) {
+		super(nome, conta, saldo);
+		this.diaRendimento = valor;
+	}
+
+	public double getDiaRendimento() {
+		return diaRendimento;
+	}
+
+	public void setDiaRendimento(double diaRendimento) {
+		this.diaRendimento = diaRendimento;
+	}
+
+}

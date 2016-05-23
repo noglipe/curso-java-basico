@@ -1,0 +1,10 @@
+package com.filipe.cursojava.aula43.exercicios;
+
+public class ContaBancaria {
+
+	private String nomeCliente;
+	private int numConta ;
+	private double Saldo;
+	
+	
+}

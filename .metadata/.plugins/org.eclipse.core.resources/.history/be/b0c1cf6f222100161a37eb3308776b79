@@ -1,0 +1,24 @@
+package com.filipe.cursojava.aula43.exercicios;
+
+public class Teste {
+
+	public static void main(String[] args) {
+
+		ContaPoupanca cliente1 = new ContaPoupanca("Filipe Nogeuira", 2345643, 450.5);
+		cliente1.setDiaRendimento(0.5);
+		
+		ContaEspecial cliente2 = new ContaEspecial(2000, "Guilherme Silva" , 22334465, 300.4);
+		
+		cliente1.Sacar(600);
+		cliente2.Sacar(1000);
+		
+		cliente1.Depositar(150.3);
+		cliente2.Depositar(600.55);
+		
+		
+		
+		
+
+	}
+
+}

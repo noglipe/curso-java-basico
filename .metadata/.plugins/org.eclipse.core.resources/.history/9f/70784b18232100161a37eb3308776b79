@@ -1,0 +1,32 @@
+package com.filipe.cursojava.aula43.exercicios;
+
+public class ContaEspecial extends ContaBancaria{
+	
+	private double limite;
+
+	public ContaEspecial(double limite, String nome, int conta, double saldo) {
+		super(nome, conta, saldo);
+		this.limite = limite;
+	}
+	
+	public double getLimite() {
+		return limite;
+	}
+
+	public void setLimite(double limite) {
+		this.limite = limite;
+	}
+	
+	public boolean Sacar(double valor){
+		if(valor <= this.getLimite()){
+			super.setSaldo(super.getSaldo() - valor);
+			return true;
+		}else{
+			System.out.println("Valor não disponível \nSeu limite é de: "+this.getLimite());
+			return false;
+		}			
+	}
+	
+	
+
+}
