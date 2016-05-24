@@ -36,7 +36,7 @@ public abstract class ContaBancaria {
 		this.saldo = saldo;
 	}
 	
-	public abstract boolean sacar(double valor);
+	public abstract boolean sacar();
 	
 	public boolean depositar(double valor){
 		this.saldo = this.saldo + valor;

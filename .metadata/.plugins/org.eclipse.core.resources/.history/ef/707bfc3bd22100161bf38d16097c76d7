@@ -13,7 +13,7 @@ public class Teste {
 		cliente2.depositar(600.55);
 		
 		cliente1.sacar(600);
-		cliente2.sacar(1000.03);
+		cliente2.sacar(1000);
 			
 		cliente1.calcularNovoSaldo();
 		

@@ -19,13 +19,18 @@ public class ContaEspecial extends ContaBancaria{
 	
 	public boolean sacar(double valor){
 		if(valor <= this.getLimite()){
+			System.out.println(super.getSaldo());
 			double saldo = super.getSaldo() - valor;
-			super.setSaldo(saldo);	
+			
+			super.setSaldo(saldo);
+			
 			return true;
 		}else{
 			System.out.println("Valor não disponível \nSeu limite é de: "+this.getLimite());
 			return false;
 		}			
 	}
+	
+	
 
 }

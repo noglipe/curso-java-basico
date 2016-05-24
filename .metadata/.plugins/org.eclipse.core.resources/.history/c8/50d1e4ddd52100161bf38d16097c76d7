@@ -36,7 +36,16 @@ public abstract class ContaBancaria {
 		this.saldo = saldo;
 	}
 	
-	public abstract boolean sacar(double valor);
+	public abstract boolean sacar(double valor){
+		if(this.saldo - valor >=0){
+			this.saldo = this.saldo -valor;
+			System.out.println("Saldo Atualizado: "+this.saldo);
+			return true;
+		}else{
+			System.out.println("Valor não disponível");
+			return false;
+		}	
+	}
 	
 	public boolean depositar(double valor){
 		this.saldo = this.saldo + valor;
